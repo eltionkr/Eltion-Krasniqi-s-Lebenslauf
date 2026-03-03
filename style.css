@@ -25,6 +25,7 @@ header {
 }
 
 .header-content {
+    gap: 40px;
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -47,30 +48,31 @@ header p {
 
 .image-wrapper {
     position: relative;
-    width: 280px;
-    height: 280px;
+    width: 160px;
+    height: 160px;
 }
 
 .profile-img {
-    width: 280px;
-    height: 280px;
+    width: 160px;
+    height: 160px;
     object-fit: cover;
     border-radius: 50%;
     position: relative;
     z-index: 2;
 }
 
-/* Weicher verschwommener Hintergrund */
+/* Weicher dezenter Hintergrund */
 .image-bg {
     position: absolute;
     top: 50%;
     left: 50%;
-    width: 320px;
-    height: 320px;
+    width: 190px;
+    height: 190px;
     transform: translate(-50%, -50%);
-    background: radial-gradient(circle, rgba(255,255,255,0.25) 0%, rgba(255,255,255,0.05) 60%, transparent 80%);
-    filter: blur(25px);
+    background: radial-gradient(circle, rgba(255,255,255,0.15) 0%, transparent 70%);
+    filter: blur(18px);
     z-index: 1;
+};
 }
 }
 
@@ -133,3 +135,4 @@ footer {
     margin-top: 40px;
 
 }
+
