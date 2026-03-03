@@ -47,8 +47,8 @@ header p {
 }
 
 .image img {
-    width: 360px;
-    height: 360px;
+    width: 180px;
+    height: 180px;
     border-radius: 50%;
     object-fit: cover;
     border: none;
@@ -164,18 +164,13 @@ footer {
 }
 
 @media (max-width: 768px) {
-    .image img {
-        width: 180px;
-        height: 180px;
-        margin: 0 auto;
-        display: block;
-    }
     .header-content {
         flex-direction: column;
         text-align: center;
         gap: 20px;
     }
 }
+
 
 
 
