@@ -46,15 +46,13 @@ header p {
     color: #bbb;
 }
 
-/* Profilbild */
+/* Profilbild zurück auf Originalgröße */
 .image img {
-    width: 360px;       /* Desktop: doppelt so groß */
-    height: 360px;
+    width: 180px;       /* Originalgröße */
+    height: 180px;
     border-radius: 50%;
     object-fit: cover;
     border: none;
-    max-width: 100%;
-    height: auto;
 }
 
 section h3 {
@@ -146,7 +144,7 @@ footer {
 /* Responsive für Handy/Tablet */
 @media (max-width: 768px) {
     .image img {
-        width: 180px;   /* Handy/Tablet: normale Größe */
+        width: 180px;   /* Handy/Tablet: gleiche Größe wie Desktop jetzt */
         height: 180px;
         margin: 0 auto;
         display: block;
