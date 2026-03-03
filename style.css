@@ -27,8 +27,7 @@ header {
 .header-content {
     display: flex;
     align-items: center;
-    justify-content: flex-start; /* Text + Bild nebeneinander */
-    gap: 40px;
+    justify-content: space-between;
     flex-wrap: wrap;
 }
 
@@ -46,9 +45,8 @@ header p {
     color: #bbb;
 }
 
-/* Profilbild neben Text */
 .image img {
-    width: 180px;       /* Originalgröße, nicht zu groß */
+    width: 180px;
     height: 180px;
     border-radius: 50%;
     object-fit: cover;
@@ -129,21 +127,8 @@ footer {
     background: #444;
 }
 
-/* Responsive für Handy/Tablet */
+/* Optional: mobile Ansicht für EFZ-Button */
 @media (max-width: 768px) {
-    .header-content {
-        flex-direction: column;
-        text-align: center;
-        gap: 20px;
-    }
-
-    .image img {
-        width: 150px;   /* Etwas kleiner auf Handy */
-        height: 150px;
-        margin: 0 auto;
-        display: block;
-    }
-
     .download-efz {
         display: block;
         margin: 10px auto;
