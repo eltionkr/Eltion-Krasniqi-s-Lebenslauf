@@ -135,6 +135,26 @@ footer {
     margin-top: 40px;
 
 }
+.section-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.download-efz {
+    background: #111;
+    color: white;
+    padding: 8px 16px;
+    text-decoration: none;
+    border-radius: 5px;
+    font-size: 14px;
+    transition: 0.3s;
+}
+
+.download-efz:hover {
+    background: #444;
+}
 
 
 
