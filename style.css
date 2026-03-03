@@ -55,15 +55,14 @@ header p {
 }
 
 .profile-img {
-    width: 160px;
-    height: 160px;
+    width: 3600px;
+    height: 360px;
     object-fit: cover;
     border-radius: 50%;
     position: relative;
     z-index: 2;
 }
 
-/* Weicher dezenter Hintergrund */
 .image-bg {
     position: absolute;
     top: 50%;
@@ -161,5 +160,6 @@ footer {
 .download-efz:hover {
     background: #444;
 }
+
 
 
