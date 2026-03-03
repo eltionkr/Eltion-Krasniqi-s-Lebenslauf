@@ -25,7 +25,6 @@ header {
 }
 
 .header-content {
-    gap: 40px;
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -46,13 +45,12 @@ header p {
     color: #bbb;
 }
 
-/* Profilbild zurück auf Originalgröße */
 .image img {
-    width: 180px;       /* Originalgröße */
+    width: 180px;
     height: 180px;
     border-radius: 50%;
     object-fit: cover;
-    border: none;
+    border: 4px solid white;
 }
 
 section h3 {
@@ -114,19 +112,7 @@ footer {
     margin-top: 40px;
 }
 
-.section-header {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    margin-bottom: 20px;
-}
-
-.section-header h3 {
-    margin: 0;
-    font-size: 24px;
-    color: #111;
-}
-
+/* EFZ-Download Button */
 .download-efz {
     background: #111;
     color: white;
@@ -141,18 +127,11 @@ footer {
     background: #444;
 }
 
-/* Responsive für Handy/Tablet */
+/* Optional: mobile Ansicht für EFZ-Button */
 @media (max-width: 768px) {
-    .image img {
-        width: 180px;   /* Handy/Tablet: gleiche Größe wie Desktop jetzt */
-        height: 180px;
-        margin: 0 auto;
+    .download-efz {
         display: block;
-    }
-
-    .header-content {
-        flex-direction: column;
+        margin: 10px auto;
         text-align: center;
-        gap: 20px;
     }
 }
