@@ -57,7 +57,7 @@ header p {
 }
 
 .profile-img {
-    width: 3600px;
+    width: 360px;
     height: 360px;
     object-fit: cover;
     border-radius: 50%;
@@ -176,6 +176,7 @@ footer {
         gap: 20px;
     }
 }
+
 
 
 
