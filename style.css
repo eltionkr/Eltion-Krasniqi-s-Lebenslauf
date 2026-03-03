@@ -27,7 +27,8 @@ header {
 .header-content {
     display: flex;
     align-items: center;
-    justify-content: space-between;
+    justify-content: flex-start; /* Text + Bild nebeneinander */
+    gap: 40px;
     flex-wrap: wrap;
 }
 
@@ -45,6 +46,7 @@ header p {
     color: #bbb;
 }
 
+/* Profilbild oben wieder Originalgröße */
 .image img {
     width: 180px;
     height: 180px;
@@ -63,6 +65,9 @@ section h3 {
 
 .job {
     margin-bottom: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between; /* EFZ-Button rechts vom Untertitel */
 }
 
 .job span {
@@ -127,11 +132,28 @@ footer {
     background: #444;
 }
 
-/* Optional: mobile Ansicht für EFZ-Button */
+/* Responsive für Handy/Tablet */
 @media (max-width: 768px) {
-    .download-efz {
-        display: block;
-        margin: 10px auto;
+    .header-content {
+        flex-direction: column;
         text-align: center;
+        gap: 20px;
+    }
+
+    .image img {
+        width: 150px;
+        height: 150px;
+        margin: 0 auto;
+        display: block;
+    }
+
+    .job {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 10px;
+    }
+
+    .download-efz {
+        margin: 0;
     }
 }
