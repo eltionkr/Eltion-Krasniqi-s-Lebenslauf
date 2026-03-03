@@ -27,8 +27,8 @@ header {
 .header-content {
     display: flex;
     align-items: center;
-    justify-content: flex-start; /* Text + Bild nebeneinander */
-    gap: 40px;
+    justify-content: flex-start; /* Bild neben Text */
+    gap: 30px;
     flex-wrap: wrap;
 }
 
@@ -46,15 +46,16 @@ header p {
     color: #bbb;
 }
 
-/* Profilbild oben wieder Originalgröße */
+/* PROFILBILD: klein und rund wie am Anfang */
 .image img {
-    width: 180px;
-    height: 180px;
+    width: 150px;
+    height: 150px;
     border-radius: 50%;
     object-fit: cover;
-    border: 4px solid white;
+    border: 4px solid white; /* optionaler Rahmen */
 }
 
+/* Abschnittsüberschriften */
 section h3 {
     margin-bottom: 20px;
     font-size: 24px;
@@ -63,11 +64,9 @@ section h3 {
     padding-bottom: 5px;
 }
 
+/* JOB‑Block */
 .job {
     margin-bottom: 30px;
-    display: flex;
-    align-items: center;
-    justify-content: space-between; /* EFZ-Button rechts vom Untertitel */
 }
 
 .job span {
@@ -117,7 +116,14 @@ footer {
     margin-top: 40px;
 }
 
-/* EFZ-Download Button */
+/* EFZ‑DOWNLOAD BUTTON neben dem Titel */
+.section-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
 .download-efz {
     background: #111;
     color: white;
@@ -132,25 +138,25 @@ footer {
     background: #444;
 }
 
-/* Responsive für Handy/Tablet */
+/* RESPONSIVE: Handy/Tablet */
 @media (max-width: 768px) {
     .header-content {
         flex-direction: column;
         text-align: center;
-        gap: 20px;
+        gap: 15px;
     }
 
     .image img {
-        width: 150px;
-        height: 150px;
+        width: 120px;
+        height: 120px;
         margin: 0 auto;
         display: block;
     }
 
-    .job {
+    .section-header {
         flex-direction: column;
         align-items: flex-start;
-        gap: 10px;
+        gap: 8px;
     }
 
     .download-efz {
