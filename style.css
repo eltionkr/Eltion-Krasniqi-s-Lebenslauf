@@ -47,10 +47,10 @@ header p {
     color: #bbb;
 }
 
-/* Profilbild */
+/* Profilbild – größer auf Desktop, responsive */
 .image img {
-    width: 150px;       /* klein + rund */
-    height: 150px;
+    width: 220px;       /* größer auf Desktop */
+    height: 220px;
     border-radius: 50%;
     object-fit: cover;
     border: 4px solid white;
@@ -149,7 +149,7 @@ footer {
     }
 
     .image img {
-        width: 120px;
+        width: 120px;       /* kleiner auf Handy/Tablet */
         height: 120px;
         margin: 0 auto;
         display: block;
