@@ -1,3 +1,6 @@
+/* -----------------------------------
+   GLOBAL
+----------------------------------- */
 * {
     margin: 0;
     padding: 0;
@@ -11,6 +14,9 @@ body {
     line-height: 1.6;
 }
 
+/* -----------------------------------
+   CONTAINER
+----------------------------------- */
 .container {
     width: 90%;
     max-width: 1000px;
@@ -18,6 +24,9 @@ body {
     padding: 40px 0;
 }
 
+/* -----------------------------------
+   HEADER
+----------------------------------- */
 header {
     background: #111;
     color: white;
@@ -46,18 +55,20 @@ header p {
     color: #bbb;
 }
 
-/* PROFILBILD: Option 2 - Klasse .profile-img überschreiben */
-.profile-img {
-    width: 150px !important; /* kleine runde Größe wie am Anfang */
-    height: 150px !important;
+/* -----------------------------------
+   PROFILBILD
+----------------------------------- */
+.image img {
+    width: 150px;
+    height: 150px;
     border-radius: 50%;
     object-fit: cover;
     border: 4px solid white; /* optionaler Rahmen */
-    position: relative;
-    z-index: 2;
 }
 
-/* Abschnittsüberschriften */
+/* -----------------------------------
+   ABSCHNITTSÜBERSCHRIFTEN
+----------------------------------- */
 section h3 {
     margin-bottom: 20px;
     font-size: 24px;
@@ -66,7 +77,9 @@ section h3 {
     padding-bottom: 5px;
 }
 
-/* JOB‑Block */
+/* -----------------------------------
+   JOB-BLOCK
+----------------------------------- */
 .job {
     margin-bottom: 30px;
 }
@@ -81,6 +94,9 @@ ul {
     padding-left: 20px;
 }
 
+/* -----------------------------------
+   SKILLS
+----------------------------------- */
 .skills li {
     display: inline-block;
     background: #111;
@@ -91,6 +107,9 @@ ul {
     font-size: 14px;
 }
 
+/* -----------------------------------
+   CONTACT
+----------------------------------- */
 .contact p {
     margin: 8px 0;
 }
@@ -110,6 +129,9 @@ ul {
     background: #444;
 }
 
+/* -----------------------------------
+   FOOTER
+----------------------------------- */
 footer {
     text-align: center;
     padding: 20px;
@@ -118,7 +140,9 @@ footer {
     margin-top: 40px;
 }
 
-/* EFZ‑DOWNLOAD BUTTON neben dem Titel */
+/* -----------------------------------
+   EFZ-DOWNLOAD BUTTON NEBEN TITEL
+----------------------------------- */
 .section-header {
     display: flex;
     justify-content: space-between;
@@ -140,7 +164,9 @@ footer {
     background: #444;
 }
 
-/* RESPONSIVE: Handy/Tablet */
+/* -----------------------------------
+   RESPONSIVE: HANDY/TABLET
+----------------------------------- */
 @media (max-width: 768px) {
     .header-content {
         flex-direction: column;
@@ -148,9 +174,9 @@ footer {
         gap: 15px;
     }
 
-    .profile-img {
-        width: 120px !important;
-        height: 120px !important;
+    .image img {
+        width: 120px;
+        height: 120px;
         margin: 0 auto;
         display: block;
     }
