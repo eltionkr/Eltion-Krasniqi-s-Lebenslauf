@@ -142,10 +142,16 @@ footer {
     margin-bottom: 20px;
 }
 
+.section-header h3 {
+    margin: 0;
+    font-size: 24px;
+    color: #111;
+}
+
 .download-efz {
     background: #111;
     color: white;
-    padding: 8px 16px;
+    padding: 6px 14px;
     text-decoration: none;
     border-radius: 5px;
     font-size: 14px;
@@ -155,6 +161,4 @@ footer {
 .download-efz:hover {
     background: #444;
 }
-
-
 
